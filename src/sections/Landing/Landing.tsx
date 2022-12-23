@@ -9,6 +9,7 @@ import {
   Name,
   OtherTitles,
   PatternRectangleSquare,
+  PatternRectangleSquare2,
   PatternSquare,
   RightWrapper,
   SubHeading,
@@ -56,6 +57,7 @@ const Landing: FC = () => {
 
           <ButtonSecondary>Learn More</ButtonSecondary>
         </div>
+        <PatternRectangleSquare2 />
       </RightWrapper>
     </MainWrapper>
   );

@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import { ReactComponent as SVGsquare } from "../../svg/patternSquare.svg";
 import { ReactComponent as SVGrectangleSquare } from "../../svg/patternRectangleSquare.svg";
-
+import { ReactComponent as SVGTetrisBottomLeft } from "../../svg/tetrisCornerBottomleft.svg";
 export const MainWrapper = styled("div")`
   width: 100%;
   height: 70vh;
   display: flex;
+  flex-wrap: no-wrap;
   margin-bottom: 15px;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
 `;
 
 export const LeftWrapper = styled("div")`
@@ -16,6 +21,12 @@ export const LeftWrapper = styled("div")`
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  overflow: hidden;
+  @media (max-width: 1400px) {
+    width: 100%;
+    margin-right: 0;
+    height: 100vh;
+  }
 `;
 export const LeftWrapperBackground = styled("div")`
   box-sizing: border-box;
@@ -96,12 +107,18 @@ export const HiddenImg = styled("div")`
 
 export const RightWrapper = styled("div")`
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
   padding: 50px;
   width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1400px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
 `;
 
 export const Name = styled("h1")`
@@ -120,13 +137,16 @@ export const Name = styled("h1")`
     background-color: ${({ theme }) => theme.colors.secondaryMain};
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
-    @media (max-width: 800px) {
-      display: none;
+    @media (max-width: 1400px) {
+      height: 5px;
     }
   }
   ${MainWrapper}:hover &::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  @media (max-width: 1400px) {
+    font-size: 3rem;
   }
 `;
 
@@ -147,6 +167,10 @@ export const SubHeading = styled("h1")`
   color: ${({ theme }) => theme.colors.primaryMain};
   position: relative;
   top: 12px;
+  @media (max-width: 1400px) {
+    font-size: 1.2rem;
+    top: 6px;
+  }
 `;
 
 export const LastName = styled("h1")`
@@ -157,6 +181,10 @@ export const LastName = styled("h1")`
   position: relative;
   bottom: 5px;
   text-align: right;
+  @media (max-width: 1400px) {
+    font-size: 1.5rem;
+    bottom: 0;
+  }
 `;
 
 export const PatternSquare = styled(SVGsquare)`
@@ -168,6 +196,10 @@ export const PatternSquare = styled(SVGsquare)`
     color: ${({ theme }) => theme.colors.primaryMain};
   }
   margin-right: 10px;
+  @media (max-width: 1400px) {
+    width: 12px;
+    height: 12px;
+  }
 `;
 export const PatternRectangleSquare = styled(SVGrectangleSquare)`
   width: 196px;
@@ -176,6 +208,29 @@ export const PatternRectangleSquare = styled(SVGrectangleSquare)`
   transition: 1500ms;
   ${MainWrapper}:hover & {
     color: ${({ theme }) => theme.colors.primaryMain};
+  }
+  @media (max-width: 1400px) {
+    width: calc(196px / 4);
+    height: calc(163px / 4);
+  }
+`;
+
+export const PatternRectangleSquare2 = styled(SVGTetrisBottomLeft)`
+  width: calc(127px / 2);
+  height: calc(149px / 2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: ${({ theme }) => theme.colors.tertiaryOverlayLight};
+  transition: 500ms;
+  cursor: pointer;
+  &:hover {
+    transform: scale(2);
+    translate: 30px -38px;
+    color: ${({ theme }) => theme.colors.tertiaryMain};
+  }
+  @media (max-width: 1400px) {
+    display: none;
   }
 `;
 

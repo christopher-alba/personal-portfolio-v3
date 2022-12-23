@@ -17,6 +17,7 @@ declare module "styled-components" {
       tertiarySub: string;
       tertiaryHover: string;
       tertiaryOverlay: string;
+      tertiaryOverlayLight: string;
     };
   }
 }

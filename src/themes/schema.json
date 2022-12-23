@@ -12,7 +12,8 @@
             "tertiaryMain": "rgba(0, 68, 255,1)",
             "tertiarySub": "",
             "tertiaryHover": "rgba(0, 68, 255,1)",
-            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)"
+            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)",
+            "tertiaryOverlayLight": "rgba(0,8,255,0.1)"
         }
     },
     "dark": {
@@ -28,7 +29,8 @@
             "tertiaryMain": "rgba(0, 68, 255,1)",
             "tertiarySub": "",
             "tertiaryHover": "rgba(0, 68, 255,1)",
-            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)"
+            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)",
+            "tertiaryOverlayLight": "rgba(0,8,255,0.1)"
         }
     }
 }
