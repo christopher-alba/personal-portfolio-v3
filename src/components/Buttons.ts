@@ -11,6 +11,30 @@ export const ButtonTertiary = styled("button")`
   &:hover {
     background: ${({ theme }) => theme.colors.tertiaryMain};
     color: ${({ theme }) => theme.colors.primaryMain};
+    animation: bg-spin 1s linear;
+  }
+
+  @keyframes bg-spin {
+    0% {
+      transform: translateY(0px) scale(1);
+      box-shadow: 0px 0px 10px 2px transparent;
+    }
+    25% {
+      transform: translateY(-5px) scale(1);
+      box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.secondaryShadow};
+    }
+    50% {
+      transform: translateY(0px) scale(1);
+      box-shadow: 0px 0px 10px 2px transparent;
+    }
+    75% {
+      transform: translateY(-5px) scale(1);
+      box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.secondaryShadow};
+    }
+    100% {
+      transform: translateY(0px) scale(1);
+      box-shadow: 0px 0px 10px 2px transparent;
+    }
   }
 `;
 

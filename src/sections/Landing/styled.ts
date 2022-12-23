@@ -221,8 +221,8 @@ export const PatternRectangleSquare2 = styled(SVGTetrisBottomLeft)`
   position: absolute;
   bottom: 0;
   left: 0;
-  color: ${({ theme }) => theme.colors.tertiaryOverlayLight};
-  transition: 500ms;
+  color: ${({ theme }) => theme.colors.tertiarySub};  
+  transition:500ms;
   cursor: pointer;
   &:hover {
     transform: scale(2);

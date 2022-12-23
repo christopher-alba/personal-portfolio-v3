@@ -13,6 +13,7 @@ declare module "styled-components" {
       secondaryMain: string;
       secondarySub: string;
       secondaryHover: string;
+      secondaryShadow: string;
       tertiaryMain: string;
       tertiarySub: string;
       tertiaryHover: string;
