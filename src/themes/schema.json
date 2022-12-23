@@ -3,15 +3,16 @@
         "name": "light",
         "colors": {
             "primaryMain": "white",
-            "primarySub": "",
+            "primarySub": "#F6F6F6",
             "primaryHover": "",
+            "primaryTransparent": "rgba(255,255,255,0.5)",
             "secondaryMain": "black",
             "secondarySub": "",
             "secondaryHover": "",
-            "tertiaryMain": "#0075FF",
+            "tertiaryMain": "rgba(0, 68, 255,1)",
             "tertiarySub": "",
-            "tertiaryHover": "#0075FF",
-            "tertiaryOverlay": ""
+            "tertiaryHover": "rgba(0, 68, 255,1)",
+            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)"
         }
     },
     "dark": {
@@ -20,13 +21,14 @@
             "primaryMain": "#01001C",
             "primarySub": "",
             "primaryHover": "",
+            "primaryTransparent": "rgba(0,0,0,0.5)",
             "secondaryMain": "white",
             "secondarySub": "",
             "secondaryHover": "",
-            "tertiaryMain": "#0075FF",
+            "tertiaryMain": "rgba(0, 68, 255,1)",
             "tertiarySub": "",
-            "tertiaryHover": "#0075FF",
-            "tertiaryOverlay": ""
+            "tertiaryHover": "rgba(0, 68, 255,1)",
+            "tertiaryOverlay": "rgba(0, 8, 255, 0.734)"
         }
     }
 }

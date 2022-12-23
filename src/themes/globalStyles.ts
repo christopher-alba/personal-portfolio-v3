@@ -9,9 +9,9 @@ export const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-attachment: fixed;
     color: ${({ theme }) => theme.colors.secondaryMain} !important;
-    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-family:  'Inter', sans-serif;
     & button{
-      font-family: 'Open Sans', 'Inter', sans-serif;
+      font-family:  'Inter', sans-serif;
     }
     margin:0;
     &::-webkit-scrollbar-track

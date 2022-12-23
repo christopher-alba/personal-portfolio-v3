@@ -9,6 +9,7 @@ declare module "styled-components" {
       primaryMain: string;
       primarySub: string;
       primaryHover: string;
+      primaryTransparent: string;
       secondaryMain: string;
       secondarySub: string;
       secondaryHover: string;
