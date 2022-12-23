@@ -3,30 +3,30 @@
         "name": "light",
         "colors": {
             "primaryMain": "white",
-            "primarySub": "#f5f5f5",
+            "primarySub": "",
             "primaryHover": "",
-            "secondaryMain": "darkblue",
-            "secondarySub": "#454545",
-            "secondaryHover": "#2e2e2e",
-            "tertiaryMain": "brown",
+            "secondaryMain": "black",
+            "secondarySub": "",
+            "secondaryHover": "",
+            "tertiaryMain": "#0075FF",
             "tertiarySub": "",
-            "tertiaryHover": "brown",
-            "tertiaryOverlay": "rgba(165, 42, 42, 0.9)"
+            "tertiaryHover": "#0075FF",
+            "tertiaryOverlay": ""
         }
     },
     "dark": {
         "name": "dark",
         "colors": {
-            "primaryMain": "#000C24",
-            "primarySub": "#1C1C1C",
+            "primaryMain": "#01001C",
+            "primarySub": "",
             "primaryHover": "",
-            "secondaryMain": "#e3edff",
-            "secondarySub": "#c7c7c7",
-            "secondaryHover": "#f0f0f0",
-            "tertiaryMain": "#AAFF83",
+            "secondaryMain": "white",
+            "secondarySub": "",
+            "secondaryHover": "",
+            "tertiaryMain": "#0075FF",
             "tertiarySub": "",
-            "tertiaryHover": "#D3FFBE",
-            "tertiaryOverlay": "rgba(22, 254, 84, 0.9)"
+            "tertiaryHover": "#0075FF",
+            "tertiaryOverlay": ""
         }
     }
 }

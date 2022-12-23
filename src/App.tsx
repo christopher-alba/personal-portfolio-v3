@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./themes/globalStyles";
 
 function App() {
-  const [selectedTheme, setSelectedTheme] = useState(themes.dark);
+  const [selectedTheme, setSelectedTheme] = useState(themes.light);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
