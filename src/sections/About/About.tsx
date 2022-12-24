@@ -32,10 +32,8 @@ const About: FC = () => {
             muted
             loop
             style={{
-              margin: "0 auto",
               width: "100%",
-              height: "150vh",
-              objectFit: "cover",
+              height: "250vh",
             }}
           />
         </VideoWrapper>
