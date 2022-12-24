@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./themes/globalStyles";
 import Landing from "./sections/Landing";
 import About from "./sections/About";
+import Quote from "./sections/Quote";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
@@ -12,6 +13,7 @@ function App() {
       <GlobalStyles />
       <Landing />
       <About />
+      <Quote />
     </ThemeProvider>
   );
 }
