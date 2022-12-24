@@ -23,7 +23,7 @@ export const LeftWrapperOverlay = styled("div")`
 export const LeftWrapper = styled("div")`
   box-sizing: border-box;
   width: 55%;
-  background: url("/images/skyscraper2.png");
+  background: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ export const ContentWrapper = styled("div")`
   right: 200px;
   width: 100%;
   min-height: 700px;
-  background: ${({ theme }) => theme.colors.primaryTransparent};
+  background: ${({ theme }) => theme.colors.primaryMain};
   clip-path: polygon(
     20% 0%,
     100% 0,
@@ -65,7 +65,6 @@ export const ContentWrapper = styled("div")`
   );
   transition: 500ms;
   ${MainWrapper}:hover & {
-    background: ${({ theme }) => theme.colors.primaryMain};
     clip-path: polygon(
       20% 0%,
       100% 0,
@@ -147,3 +146,14 @@ export const MobileTrigger = styled(ButtonTertiary)`
     display: block;
   }
 `;
+
+export const VideoWrapper = styled("div")`
+  min-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+`;
+
+export const StyledVideo = styled("video")``;

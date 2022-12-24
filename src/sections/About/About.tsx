@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import {
   Content,
   ContentWrapper,
@@ -15,11 +15,30 @@ import {
 import SectionTitle from "../../components/SectionTitle";
 import { ButtonYouTube } from "../../components/Buttons";
 import ResponsiveCarousel from "../../components/ResponsiveCarousel";
+import { StyledVideo, VideoWrapper } from "./styled";
 
 const About: FC = () => {
+  useEffect(() => {
+    (document.getElementById("VideoAbout") as any).playbackRate = 0.7;
+  }, []);
   return (
     <MainWrapper>
       <LeftWrapper>
+        <VideoWrapper style={{ zIndex: 0 }}>
+          <StyledVideo
+            id="VideoAbout"
+            src="/images/aboutnew.mp4"
+            autoPlay
+            muted
+            loop
+            style={{
+              margin: "0 auto",
+              width: "100%",
+              height: "150vh",
+              objectFit: "cover",
+            }}
+          />
+        </VideoWrapper>
         <LeftWrapperOverlay />
       </LeftWrapper>
       <RightWrapper>
