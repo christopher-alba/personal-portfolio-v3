@@ -54,7 +54,7 @@ export const Thumbnail = styled("div")`
   cursor: pointer;
   user-select: none;
   &:last-of-type {
-    margin-right: 0;
+    margin-right: 3px;
   }
 `;
 
