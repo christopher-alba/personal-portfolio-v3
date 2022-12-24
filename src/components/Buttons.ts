@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const ButtonTertiary = styled("button")`
+  position: relative;
   padding: 10px 40px;
   margin-top: 20px;
   margin-right: 10px;
@@ -16,23 +17,25 @@ export const ButtonTertiary = styled("button")`
 
   @keyframes bg-spin {
     0% {
-      transform: translateY(0px) scale(1);
+      bottom: 0;
       box-shadow: 0px 0px 10px 2px transparent;
     }
     25% {
-      transform: translateY(-5px) scale(1);
-      box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.secondaryShadow};
+      bottom: 5px;
+      box-shadow: 0px 0px 10px 2px
+        ${({ theme }) => theme.colors.secondaryShadow};
     }
     50% {
-      transform: translateY(0px) scale(1);
+      bottom: 0;
       box-shadow: 0px 0px 10px 2px transparent;
     }
     75% {
-      transform: translateY(-5px) scale(1);
-      box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.secondaryShadow};
+      bottom: 5px;
+      box-shadow: 0px 0px 10px 2px
+        ${({ theme }) => theme.colors.secondaryShadow};
     }
     100% {
-      transform: translateY(0px) scale(1);
+      bottom: 0;
       box-shadow: 0px 0px 10px 2px transparent;
     }
   }
@@ -49,5 +52,21 @@ export const ButtonSecondary = styled("button")`
   &:hover {
     background: ${({ theme }) => theme.colors.secondaryMain};
     color: ${({ theme }) => theme.colors.primaryMain};
+  }
+`;
+
+export const ButtonYouTube = styled("button")`
+  padding: 10px 40px;
+  margin-top: 20px;
+  background: #ff3434;
+  border: none;
+  transition: 300ms;
+  color: ${({ theme }) => theme.colors.secondaryMain};
+  cursor: pointer;
+  &:hover {
+    background: #ff6666;
+  }
+  @media(max-width:700px){
+    width: 100%;
   }
 `;

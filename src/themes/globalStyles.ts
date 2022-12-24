@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     &::-webkit-scrollbar-track
     {
       background-color: ${({ theme }) => {
-        if (theme.name === "light") {
+        if (theme.name === "dark") {
           return "#F5F5F5";
         } else {
           return "#2e2e2e";
@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
     {
       width: 15px;
       background-color: ${({ theme }) => {
-        if (theme.name === "light") {
+        if (theme.name === "dark") {
           return "#F5F5F5";
         } else {
           return "#2e2e2e";
@@ -39,14 +39,14 @@ export const GlobalStyles = createGlobalStyle`
     &::-webkit-scrollbar-thumb
       {
           background-color: ${({ theme }) => {
-            if (theme.name === "light") {
+            if (theme.name === "dark") {
               return "#d4d4d4";
             } else {
               return "black";
             }
           }};
           border: 2px solid ${({ theme }) => {
-            if (theme.name === "light") {
+            if (theme.name === "dark") {
               return "#d4d4d4";
             } else {
               return "#2e2e2e";
