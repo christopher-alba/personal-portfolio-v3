@@ -55,7 +55,7 @@ const ResponsiveCarousel: FC<{ children: React.ReactNode[] }> = ({
       };
       document.addEventListener("mousemove", mouseMoveHandler);
     };
-    document.addEventListener("mousedown", mouseDownHandler);
+    ele.addEventListener("mousedown", mouseDownHandler);
     document.addEventListener("mouseup", mouseUpHandler);
   }, []);
 
