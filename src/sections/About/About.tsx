@@ -34,6 +34,7 @@ const About: FC = () => {
             style={{
               width: "100%",
               height: "250vh",
+              objectFit: "cover",
             }}
           />
         </VideoWrapper>
