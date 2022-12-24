@@ -142,7 +142,7 @@ export const SpanTertiary = styled("span")`
 
 export const MobileTrigger = styled(ButtonTertiary)`
   display: none;
-  @media(max-width: 1400px){
+  @media (max-width: 1400px) {
     display: block;
   }
 `;
@@ -152,8 +152,13 @@ export const VideoWrapper = styled("div")`
   min-height: 100%;
   min-width: 100%;
   min-height: 100%;
-  position: absolute;
+  position: relative;
+
   z-index: -1;
 `;
 
-export const StyledVideo = styled("video")``;
+export const StyledVideo = styled("video")`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;

@@ -24,20 +24,13 @@ const About: FC = () => {
   return (
     <MainWrapper>
       <LeftWrapper>
-        <VideoWrapper style={{ zIndex: 0 }}>
-          <StyledVideo
-            id="VideoAbout"
-            src="/images/aboutnew.mp4"
-            autoPlay
-            muted
-            loop
-            style={{
-              width: "100%",
-              height: "250vh",
-              objectFit: "cover",
-            }}
-          />
-        </VideoWrapper>
+        <StyledVideo
+          id="VideoAbout"
+          src="/images/aboutnew.mp4"
+          autoPlay
+          muted
+          loop
+        />
         <LeftWrapperOverlay />
       </LeftWrapper>
       <RightWrapper>
