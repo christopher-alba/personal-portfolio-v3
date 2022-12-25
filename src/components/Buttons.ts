@@ -73,6 +73,7 @@ export const ButtonYouTube = styled("button")`
 
 export const ButtonTheme = styled("button")`
   padding: 10px 40px;
+  white-space: nowrap;
   background: transparent;
   border: 2px solid ${({ theme }) => theme.colors.tertiaryOverlayLight};
   transition: 300ms;

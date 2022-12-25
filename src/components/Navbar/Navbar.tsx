@@ -41,6 +41,13 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
       setSelectedTheme(themes.light);
     }
   };
+  const getThemeText = () => {
+    if (theme.name === "light") {
+      return "Dark Mode";
+    } else {
+      return "Light Mode";
+    }
+  };
   return (
     <MainWrapper id="Navbar">
       <NavLinksWrapper>
@@ -61,7 +68,7 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
           <SpanPrimary>5.</SpanPrimary> Contact
         </NavLink>
       </NavLinksWrapper>
-      <ButtonTheme onClick={toggleTheme}>Theme</ButtonTheme>
+      <ButtonTheme onClick={toggleTheme}>{getThemeText()}</ButtonTheme>
     </MainWrapper>
   );
 };
