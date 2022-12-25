@@ -48,7 +48,7 @@ export const ContentWrapper = styled("div")`
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  margin-top: 150px;
+  margin-top: 300px;
   margin-bottom: 150px;
   right: 200px;
   width: 100%;
