@@ -6,6 +6,7 @@ import Landing from "./sections/Landing";
 import About from "./sections/About";
 import Quote from "./sections/Quote";
 import Loading from "./sections/Loading";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
@@ -38,6 +39,7 @@ function App() {
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
       {loading && <Loading msCount={msCount} />}
+      <Navbar setSelectedTheme={setSelectedTheme} />
       <Landing />
       <About />
       <Quote />

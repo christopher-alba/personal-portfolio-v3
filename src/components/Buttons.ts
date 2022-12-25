@@ -66,7 +66,22 @@ export const ButtonYouTube = styled("button")`
   &:hover {
     background: #ff6666;
   }
-  @media(max-width:700px){
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`;
+
+export const ButtonTheme = styled("button")`
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid ${({ theme }) => theme.colors.tertiaryOverlayLight};
+  transition: 300ms;
+  color: ${({ theme }) => theme.colors.secondaryMain};
+  cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => theme.colors.tertiaryOverlayLight};
+  }
+  @media (max-width: 700px) {
     width: 100%;
   }
 `;
