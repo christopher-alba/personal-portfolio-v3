@@ -192,9 +192,6 @@ export const PatternSquare = styled(SVGsquare)`
   height: 48px;
   color: ${({ theme }) => theme.colors.primaryTransparent};
   transition: 1500ms;
-  ${MainWrapper}:hover & {
-    color: ${({ theme }) => theme.colors.primaryMain};
-  }
   margin-right: 10px;
   @media (max-width: 1400px) {
     width: 12px;
@@ -206,9 +203,6 @@ export const PatternRectangleSquare = styled(SVGrectangleSquare)`
   height: 163px;
   color: ${({ theme }) => theme.colors.primaryTransparent};
   transition: 1500ms;
-  ${MainWrapper}:hover & {
-    color: ${({ theme }) => theme.colors.primaryMain};
-  }
   @media (max-width: 1400px) {
     width: calc(196px / 4);
     height: calc(163px / 4);

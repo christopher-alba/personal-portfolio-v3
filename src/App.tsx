@@ -7,6 +7,7 @@ import About from "./sections/About";
 import Quote from "./sections/Quote";
 import Loading from "./sections/Loading";
 import Navbar from "./components/Navbar";
+import Journey from "./sections/Journey";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
@@ -43,6 +44,7 @@ function App() {
       <Landing />
       <About />
       <Quote />
+      <Journey />
     </ThemeProvider>
   );
 }
