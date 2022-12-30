@@ -13,24 +13,24 @@ import { ThemeContext } from "styled-components";
 const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
   const theme = useContext(ThemeContext);
   useEffect(() => {
+    const navbar = document.getElementById("Navbar") as HTMLElement;
+    navbar.style.background = theme.colors.primarySub;
     let prevScrollpos = window.pageYOffset;
     window.addEventListener("scroll", () => {
       // NAVBAR BG BLUE ON SCROLL DOWN
-      const navbar = document.getElementById("Navbar") as HTMLElement;
+      
       const spans = document.querySelectorAll(
         "#Navbar span"
       ) as NodeListOf<HTMLElement>;
       const brand = document.getElementsByTagName("path")[0] as SVGPathElement;
       if (document.documentElement.scrollTop > 0) {
-        navbar.style.background = theme.colors.primaryTransparent;
-        navbar.style.backdropFilter = "blur(4px)";
+        navbar.style.background = theme.colors.primarySub;
         spans.forEach((span) => {
           span.style.color = theme.colors.tertiaryMain;
         });
         brand.style.color = theme.colors.tertiaryMain;
       } else {
         navbar.style.background = "transparent";
-        navbar.style.backdropFilter = "none";
         spans.forEach((span) => {
           span.style.color = theme.colors.primaryMain;
         });
@@ -45,7 +45,7 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
       }
       prevScrollpos = currentScrollPos;
     });
-  }, []);
+  }, [theme]);
   const toggleTheme = () => {
     if (theme.name === "light") {
       setSelectedTheme(themes.dark);

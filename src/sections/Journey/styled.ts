@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MainDiv = styled("div")`
   padding: 200px 0;
   position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,29 +61,32 @@ export const TechPill = styled("div")`
   border-radius: 5px;
 `;
 
-export const LeftBackground = styled("div")`
+export const BackgroundWrapper = styled("div")`
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
   height: 100%;
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+`;
+
+export const LeftBackground = styled("div")`
+  position: relative;
+  min-height: 100%;
+  width: 40%;
   box-sizing: border-box;
   background: ${({ theme }) => theme.colors.primarySub};
   z-index: -1;
-  margin-right: 20px;
+  margin-right: 15px;
 `;
 
 export const RightBackground = styled("div")`
   background: url("/images/turners.jpg");
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
+  position: relative;
+  min-height: 100%;
+  width: 60%;
   box-sizing: border-box;
   z-index: -1;
 `;

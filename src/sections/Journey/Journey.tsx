@@ -11,13 +11,13 @@ import SectionTitle from "../../components/SectionTitle";
 import SelectAndDisplay from "../../components/SelectAndDisplay";
 import { OptionsAndContents } from "../../components/SelectAndDisplay/SelectAndDisplay";
 import {
+  BackgroundWrapper,
   ContentMainDiv,
   ContentTitle,
   ContentWrapper,
   Date,
   HeaderDiv,
   LeftBackground,
-  Line,
   MainDiv,
   RightBackground,
   StyledAnchor,
@@ -341,11 +341,12 @@ const selectOptions: OptionsAndContents = {
 const Journey: FC = () => {
   return (
     <MainDiv id="journey">
-      <LeftBackground />
-      <Line />
-      <RightBackground />
+      <BackgroundWrapper>
+        <LeftBackground />
+        <RightBackground />
+      </BackgroundWrapper>
       <ContentWrapper>
-        <SectionTitle number={1} title="My Journey in Tech" />
+        <SectionTitle number={2} title="My Journey in Tech" />
         <SelectAndDisplay
           optionsAndContents={selectOptions}
           optionsMinWidth="300px"

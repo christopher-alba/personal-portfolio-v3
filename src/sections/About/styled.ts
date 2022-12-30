@@ -141,12 +141,7 @@ export const SpanTertiary = styled("span")`
   color: ${({ theme }) => theme.colors.tertiaryMain};
 `;
 
-export const MobileTrigger = styled(ButtonTertiary)`
-  display: none;
-  @media (max-width: 1400px) {
-    display: block;
-  }
-`;
+export const MobileTrigger = styled(ButtonTertiary)``;
 
 export const VideoWrapper = styled("div")`
   min-width: 100%;
