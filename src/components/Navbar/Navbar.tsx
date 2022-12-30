@@ -17,12 +17,24 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
     window.addEventListener("scroll", () => {
       // NAVBAR BG BLUE ON SCROLL DOWN
       const navbar = document.getElementById("Navbar") as HTMLElement;
+      const spans = document.querySelectorAll(
+        "#Navbar span"
+      ) as NodeListOf<HTMLElement>;
+      const brand = document.getElementsByTagName("path")[0] as SVGPathElement;
       if (document.documentElement.scrollTop > 0) {
-        navbar.style.background = theme.colors.tertiaryOverlay;
+        navbar.style.background = theme.colors.primaryTransparent;
         navbar.style.backdropFilter = "blur(4px)";
+        spans.forEach((span) => {
+          span.style.color = theme.colors.tertiaryMain;
+        });
+        brand.style.color = theme.colors.tertiaryMain;
       } else {
         navbar.style.background = "transparent";
         navbar.style.backdropFilter = "none";
+        spans.forEach((span) => {
+          span.style.color = theme.colors.primaryMain;
+        });
+        brand.style.color = theme.colors.primaryMain;
       }
       // NAVBAR DISAPPEAR ON SCROLL DOWN
       let currentScrollPos = window.pageYOffset;

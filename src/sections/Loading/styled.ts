@@ -6,7 +6,7 @@ export const MainWrapper = styled("div")`
   position: absolute;
   top: 0;
   left: 0;
-  background: black;
+  background: ${({ theme }) => theme.colors.tertiaryMain};
   color: white;
   z-index: 10000;
   opacity: 1;
@@ -17,27 +17,6 @@ export const MainWrapper = styled("div")`
   padding: 20vw;
   box-sizing: border-box;
 `;
-
-export const VideoWrapper = styled("div")`
-  min-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  z-index: -1;
-  &:before {
-    content: "";
-    position: absolute;
-    background: rgba(0, 38, 255, 0.9);
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-`;
-
-export const StyledVideo = styled("video")``;
 
 export const ContentWrapper = styled("div")`
   width: 100%;

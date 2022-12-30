@@ -39,12 +39,17 @@ function App() {
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
-      {loading && <Loading msCount={msCount} />}
-      <Navbar setSelectedTheme={setSelectedTheme} />
-      <Landing />
-      <About />
-      <Quote />
-      <Journey />
+      {loading ? (
+        <Loading msCount={msCount} />
+      ) : (
+        <>
+          <Navbar setSelectedTheme={setSelectedTheme} />
+          <Landing />
+          <About />
+          <Quote />
+          <Journey />
+        </>
+      )}
     </ThemeProvider>
   );
 }

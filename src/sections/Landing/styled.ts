@@ -65,8 +65,8 @@ export const LeftWrapperBackground = styled("div")`
 export const HiddenImg = styled("div")`
   background: linear-gradient(
       0deg,
-      rgba(0, 8, 255, 0.734),
-      rgba(0, 51, 255, 0.381)
+      rgba(0, 8, 255, 0.834),
+      rgba(0, 51, 255, 0.881)
     ),
     url("/images/jasper2.jpg");
   position: absolute;

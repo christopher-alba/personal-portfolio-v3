@@ -65,7 +65,7 @@ export const ContentWrapper = styled("div")`
     0 0
   );
   transition: 500ms;
-  ${MainWrapper}:hover & {
+  &:hover {
     clip-path: polygon(
       20% 0%,
       100% 0,
@@ -97,8 +97,8 @@ export const Content = styled("div")`
   position: relative;
   padding: 150px;
   bottom: -700px;
-  transition: 1000ms;
-  ${MainWrapper}:hover & {
+  transition: 1500ms;
+  ${ContentWrapper}:hover & {
     bottom: 0;
   }
   @media (max-width: 700px) {
@@ -112,8 +112,8 @@ export const SectionIntro = styled("div")`
   width: 100%;
   height: 100%;
   background: ${({ theme }) => theme.colors.primaryMain};
-  transition: 1000ms;
-  ${MainWrapper}:hover & {
+  transition: 1500ms;
+  ${ContentWrapper}:hover & {
     top: -100%;
   }
   display: flex;

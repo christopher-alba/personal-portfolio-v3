@@ -6,22 +6,12 @@ import {
   ProgressBar,
   ProgressMainWrapper,
   ProgressText,
-  StyledVideo,
   SuccessText,
-  VideoWrapper,
 } from "./styled";
 
 const Loading: FC<{ msCount: number }> = ({ msCount }) => {
   return (
     <MainWrapper id="Loading">
-      <VideoWrapper>
-        <StyledVideo
-          autoPlay
-          muted
-          loop
-          src="/images/loading.mp4"
-        ></StyledVideo>
-      </VideoWrapper>
       <ContentWrapper>
         {(msCount / 4000) * 100 >= 100 ? (
           <SuccessText>Successfully Loaded chrisalba.exe</SuccessText>
