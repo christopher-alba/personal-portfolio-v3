@@ -50,8 +50,8 @@ export const ContentWrapper = styled("div")`
   box-sizing: border-box;
   margin-top: 300px;
   margin-bottom: 150px;
-  right: 200px;
-  width: 100%;
+  right: 300px;
+  width: 120%;
   min-height: 700px;
   background: ${({ theme }) => theme.colors.primaryMain};
   clip-path: polygon(
