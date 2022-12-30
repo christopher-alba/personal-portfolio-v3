@@ -14,11 +14,14 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
   const theme = useContext(ThemeContext);
   useEffect(() => {
     const navbar = document.getElementById("Navbar") as HTMLElement;
-    navbar.style.background = theme.colors.primarySub;
+    if (document.documentElement.scrollTop > 0) {
+      navbar.style.background = theme.colors.primarySub;
+    }
+
     let prevScrollpos = window.pageYOffset;
     window.addEventListener("scroll", () => {
       // NAVBAR BG BLUE ON SCROLL DOWN
-      
+
       const spans = document.querySelectorAll(
         "#Navbar span"
       ) as NodeListOf<HTMLElement>;
