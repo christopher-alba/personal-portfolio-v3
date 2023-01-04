@@ -55,7 +55,15 @@ const Landing: FC = () => {
             </ButtonTertiary>
           </Link>
 
-          <ButtonSecondary>Learn More</ButtonSecondary>
+          <ButtonSecondary
+            onClick={() =>
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Learn More
+          </ButtonSecondary>
         </div>
         <PatternRectangleSquare2 />
       </RightWrapper>
