@@ -78,8 +78,8 @@ export const ContentWrapper = styled("div")`
     );
   }
   @media (max-width: 1400px) {
-    width: 200%;
-    right: 112%;
+    width: 220%;
+    right: 123%;
     clip-path: polygon(
       20% 0%,
       100% 0,
@@ -102,7 +102,7 @@ export const Content = styled("div")`
     bottom: 0;
   }
   @media (max-width: 700px) {
-    padding: 10px;
+    padding: 30px;
   }
 `;
 

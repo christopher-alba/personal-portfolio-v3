@@ -1,6 +1,7 @@
 import { FC, useContext, useEffect, useState } from "react";
 import { ProjectStatus, projects } from "./projectData";
 import {
+  ButtonCycle,
   CarouselButton,
   ContentWrapper,
   DevicePill,
@@ -11,6 +12,7 @@ import {
   PSSNLD,
   PSUC,
   ProjectImg,
+  ProjectImgWrapper,
   ProjectStatuses,
   ProjectSubTitle,
   StyledHR,
@@ -91,7 +93,11 @@ const Projects: FC = () => {
         <CarouselButton onClick={decrementIndex}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </CarouselButton>
-        <ProjectImg src={project.imgSrc} />
+        <ProjectImgWrapper>
+          <ProjectImg src={project.imgSrc} />
+          <ButtonCycle onClick={decrementIndex}>Previous</ButtonCycle>
+          <ButtonCycle onClick={incrementIndex}>Next</ButtonCycle>
+        </ProjectImgWrapper>
         <ContentWrapper>
           <h1>{project.name}</h1>
           <ProjectStatuses>

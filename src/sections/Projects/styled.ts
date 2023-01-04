@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const OuterDiv = styled("div")`
   padding: 150px;
+  @media (max-width: 1800px) {
+    padding: 20px;
+  }
 `;
 
 export const MainDiv = styled("div")`
@@ -9,12 +12,27 @@ export const MainDiv = styled("div")`
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  height: 650px;
   box-sizing: border-box;
+  @media (max-width: 1800px) {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
 `;
 
-export const ProjectImg = styled("img")`
+export const ProjectImgWrapper = styled("div")`
   width: 50%;
-  height: 400px;
+  height: 100%;
+  @media (max-width: 1800px) {
+    width: 100%;
+  }
+  & > button:last-of-type {
+    border-left: none;
+  }
+`;
+export const ProjectImg = styled("img")`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 `;
@@ -22,6 +40,10 @@ export const ContentWrapper = styled("div")`
   width: 50%;
   padding: 0 50px;
   box-sizing: border-box;
+  @media (max-width: 1800px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const CarouselButton = styled("button")`
@@ -34,10 +56,14 @@ export const CarouselButton = styled("button")`
     background: ${({ theme }) => theme.colors.primarySub};
   }
   cursor: pointer;
+  @media (max-width: 1800px) {
+    display: none;
+  }
 `;
 
 export const ThumbnailWrapper = styled("div")`
   display: flex;
+  box-sizing: border-box;
   padding: 50px;
   width: 50%;
   margin: 0 auto;
@@ -52,6 +78,10 @@ export const ThumbnailWrapper = styled("div")`
   }
   &::-webkit-scrollbar-thumb {
     display: none;
+  }
+  @media (max-width: 1800px) {
+    width: 100%;
+    padding: 10px;
   }
 `;
 
@@ -139,4 +169,22 @@ export const DevicePill = styled("div")`
   padding: 5px 10px;
   margin-right: 20px;
   margin-bottom: 20px;
+`;
+
+export const ButtonCycle = styled("button")`
+  background: none;
+  color: ${({ theme }) => theme.colors.secondaryMain};
+  border: 2px solid ${({ theme }) => theme.colors.secondaryMain};
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  margin: 0;
+  width: 50%;
+  cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => theme.colors.secondaryMain};
+    color: ${({ theme }) => theme.colors.primaryMain};
+  }
+  @media (min-width: 1800px) {
+    display: none;
+  }
 `;
