@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Journey from "./sections/Journey";
 import Projects from "./sections/Projects";
 import Education from "./sections/Education";
+import Contact from "./sections/Contact";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
@@ -21,7 +22,6 @@ function App() {
 
     const counter = setInterval(() => {
       setMsCount((msCount) => {
-        console.log(msCount);
         if ((msCount / 4000) * 100 >= 100) {
           clearInterval(counter);
           setTimeout(() => {
@@ -52,6 +52,7 @@ function App() {
           <Journey />
           <Projects />
           <Education />
+          <Contact />
         </>
       )}
     </ThemeProvider>

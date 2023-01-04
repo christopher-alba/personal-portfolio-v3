@@ -1,19 +1,17 @@
 import { FC } from "react";
 import styled from "styled-components";
-const SectionTitleText = styled("h2")`
+const SectionTitleText = styled("span")`
   margin: 0;
   font-size: 2.3rem;
 `;
-const SectionTitleNumber = styled("p")`
+const SectionTitleNumber = styled("span")`
   color: ${({ theme }) => theme.colors.tertiaryMain};
   margin: 0;
   margin-right: 10px;
   font-size: 2.3rem;
   font-weight: 700;
 `;
-const SectionTitleWrapper = styled("div")`
-  display: flex;
-  align-items: center;
+const SectionTitleWrapper = styled("h2")`
   margin-bottom: 20px;
 `;
 
