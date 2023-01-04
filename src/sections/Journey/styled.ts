@@ -54,11 +54,10 @@ export const TechWrapper = styled("div")`
 export const TechPill = styled("div")`
   font-size: 0.8rem;
   background: ${({ theme }) => theme.colors.tertiaryMain};
-  color: ${({ theme }) => theme.colors.primaryMain};
+  color: white;
   padding: 5px 10px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
 `;
 
 export const BackgroundWrapper = styled("div")`

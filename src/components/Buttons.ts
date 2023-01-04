@@ -86,3 +86,15 @@ export const ButtonTheme = styled("button")`
     width: 100%;
   }
 `;
+
+export const ButtonPlain = styled("button")`
+  background: none;
+  color: ${({ theme }) => theme.colors.secondaryMain};
+  border: 2px solid ${({ theme }) => theme.colors.secondaryMain};
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => theme.colors.secondaryMain};
+    color: ${({ theme }) => theme.colors.primaryMain};
+  }
+`;

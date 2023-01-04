@@ -8,6 +8,7 @@ import Quote from "./sections/Quote";
 import Loading from "./sections/Loading";
 import Navbar from "./components/Navbar";
 import Journey from "./sections/Journey";
+import Projects from "./sections/Projects";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
@@ -48,6 +49,7 @@ function App() {
           <About />
           <Quote />
           <Journey />
+          <Projects />
         </>
       )}
     </ThemeProvider>
