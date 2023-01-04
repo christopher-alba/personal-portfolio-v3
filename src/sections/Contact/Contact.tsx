@@ -28,7 +28,7 @@ import {
 
 const Contact: FC = () => {
   return (
-    <DivOuter>
+    <DivOuter id="contact">
       <div
         style={{ position: "absolute", top: 0, height: "100%", width: "100%" }}
       >

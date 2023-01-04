@@ -87,7 +87,7 @@ const Projects: FC = () => {
   };
   const project = projects[index];
   return (
-    <OuterDiv>
+    <OuterDiv id="projects">
       <SectionTitle number={3} title="Personal Projects" />
       <MainDiv>
         <CarouselButton onClick={decrementIndex}>

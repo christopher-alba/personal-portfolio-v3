@@ -66,20 +66,56 @@ const Navbar: FC<{ setSelectedTheme: any }> = ({ setSelectedTheme }) => {
   return (
     <MainWrapper id="Navbar">
       <NavLinksWrapper>
-        <Brand />
-        <NavLink>
+        <Brand
+          onClick={() =>
+            document
+              .getElementById("landing")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <NavLink
+          onClick={() =>
+            document
+              .getElementById("about")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <SpanPrimary>1.</SpanPrimary> About
         </NavLink>
-        <NavLink>
+        <NavLink
+          onClick={() =>
+            document
+              .getElementById("journey")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <SpanPrimary>2.</SpanPrimary> Journey
         </NavLink>
-        <NavLink>
+        <NavLink
+          onClick={() =>
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <SpanPrimary>3.</SpanPrimary> Projects
         </NavLink>
-        <NavLink>
+        <NavLink
+          onClick={() =>
+            document
+              .getElementById("education")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <SpanPrimary>4.</SpanPrimary> Education
         </NavLink>
-        <NavLink>
+        <NavLink
+          onClick={() =>
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <SpanPrimary>5.</SpanPrimary> Contact
         </NavLink>
       </NavLinksWrapper>

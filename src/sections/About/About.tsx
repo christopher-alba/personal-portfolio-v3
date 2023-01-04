@@ -22,7 +22,7 @@ const About: FC = () => {
     (document.getElementById("VideoAbout") as any).playbackRate = 0.7;
   }, []);
   return (
-    <MainWrapper>
+    <MainWrapper id="about">
       <LeftWrapper>
         <StyledVideo
           id="VideoAbout"

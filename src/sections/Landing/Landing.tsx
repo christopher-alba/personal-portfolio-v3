@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
 const Landing: FC = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="landing">
       <LeftWrapper>
         <div style={{ position: "absolute", zIndex: 1 }}>
           <SubHeadingWrapper>
