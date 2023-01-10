@@ -33,7 +33,7 @@ export const Brand = styled(SVGBrand)`
 `;
 
 export const NavLink = styled("button")`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: ${({ theme }) => theme.colors.secondaryMain};
   font-weight: 900;
   background: transparent;

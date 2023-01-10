@@ -123,7 +123,7 @@ export const RightWrapper = styled("div")`
 
 export const Name = styled("h1")`
   margin: 0;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 900;
   position: relative;
   &::after {
@@ -131,7 +131,7 @@ export const Name = styled("h1")`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 15px;
+    height: 7px;
     bottom: 0;
     left: 0;
     background-color: ${({ theme }) => theme.colors.secondaryMain};
@@ -162,11 +162,11 @@ export const SubHeadingWrapperInnerLeft = styled("div")`
 
 export const SubHeading = styled("h1")`
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.primaryMain};
   position: relative;
-  top: 12px;
+  top: 7px;
   @media (max-width: 1400px) {
     font-size: 1.2rem;
     top: 6px;
@@ -175,7 +175,7 @@ export const SubHeading = styled("h1")`
 
 export const LastName = styled("h1")`
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.primaryMain};
   position: relative;
@@ -199,8 +199,8 @@ export const PatternSquare = styled(SVGsquare)`
   }
 `;
 export const PatternRectangleSquare = styled(SVGrectangleSquare)`
-  width: 196px;
-  height: 163px;
+  width: calc(196px / 2);
+  height: calc(163px / 2);
   color: ${({ theme }) => theme.colors.primaryTransparent};
   transition: 1500ms;
   @media (max-width: 1400px) {

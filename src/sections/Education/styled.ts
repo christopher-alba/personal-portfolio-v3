@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-export const MainDiv = styled("div")`
-  margin-top: 100px;
-  margin-bottom: 100px;
-`;
+export const MainDiv = styled("div")``;
 
 export const SubTitle = styled("h2")``;
 

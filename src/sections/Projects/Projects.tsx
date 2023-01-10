@@ -32,6 +32,7 @@ import SectionTitle from "../../components/SectionTitle";
 import { TechPill } from "../Journey/styled";
 import { ButtonPlain, ButtonTertiary } from "../../components/Buttons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Container } from "../../components/Container";
 
 const Projects: FC = () => {
   const [index, setIndex] = useState(0);
@@ -87,7 +88,7 @@ const Projects: FC = () => {
   };
   const project = projects[index];
   return (
-    <OuterDiv id="projects">
+    <Container id="projects">
       <SectionTitle number={3} title="Personal Projects" />
       <MainDiv>
         <CarouselButton onClick={decrementIndex}>
@@ -200,7 +201,7 @@ const Projects: FC = () => {
           />
         ))}
       </ThumbnailWrapper>
-    </OuterDiv>
+    </Container>
   );
 };
 
