@@ -5,7 +5,6 @@ import { GlobalStyles } from "./themes/globalStyles";
 import Landing from "./sections/Landing";
 import About from "./sections/About";
 import Quote from "./sections/Quote";
-import Loading from "./sections/Loading";
 import Navbar from "./components/Navbar";
 import Journey from "./sections/Journey";
 import Projects from "./sections/Projects";
@@ -14,47 +13,19 @@ import Contact from "./sections/Contact";
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(themes.light);
-  const [msCount, setMsCount] = useState(0);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.body.style.overflowY = "hidden";
-
-    const counter = setInterval(() => {
-      setMsCount((msCount) => {
-        if ((msCount / 4000) * 100 >= 100) {
-          clearInterval(counter);
-          setTimeout(() => {
-            (document.getElementById("Loading") as any).style.opacity = 0;
-
-            setTimeout(() => {
-              setLoading(false);
-              document.body.style.overflowY = "scroll";
-            }, 500);
-          }, 1000);
-          return msCount;
-        }
-        return msCount + 4;
-      });
-    }, 4);
-  }, []);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
-      {loading ? (
-        <Loading msCount={msCount} />
-      ) : (
-        <>
-          <Navbar setSelectedTheme={setSelectedTheme} />
-          <Landing />
-          <About />
-          <Quote />
-          <Journey />
-          <Projects />
-          <Education />
-          <Contact />
-        </>
-      )}
+      <>
+        <Navbar setSelectedTheme={setSelectedTheme} />
+        <Landing />
+        <About />
+        <Quote />
+        <Journey />
+        <Projects />
+        <Education />
+        <Contact />
+      </>
     </ThemeProvider>
   );
 }
