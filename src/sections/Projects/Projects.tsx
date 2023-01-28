@@ -3,6 +3,7 @@ import { ProjectStatus, projects } from "./projectData";
 import {
   ButtonCycle,
   CarouselButton,
+  Container,
   ContentWrapper,
   DevicePill,
   MainDiv,
@@ -32,7 +33,6 @@ import SectionTitle from "../../components/SectionTitle";
 import { TechPill } from "../Journey/styled";
 import { ButtonPlain, ButtonTertiary } from "../../components/Buttons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Container } from "../../components/Container";
 
 const Projects: FC = () => {
   const [index, setIndex] = useState(0);
